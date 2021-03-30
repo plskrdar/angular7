@@ -1,0 +1,22 @@
+<ng-container *ngIf="reportCollection && reportCollection.length">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">{{'Nazwa'}}</th>
+                <th scope="col">{{'Data'}}</th>
+                <th scope="col">{{'Godzina'}}</th>
+                <th scope="col">{{'Uzytkownik'}}</th>
+                <th scope="col">{{'Lokal'}}</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let reportRow of reportCollection">
+            <tr>
+                <td scope="row">{{reportRow.name}}</td>
+                <td>{{reportRow.date}}</td>
+                <td>{{reportRow.time}}</td>
+                <td>{{reportRow.user}}</td>
+                <td>{{reportRow.venue}}</td>
+            </tr>
+        </tbody>
+    </table>
+</ng-container>

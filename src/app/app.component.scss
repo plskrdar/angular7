@@ -1,0 +1,24 @@
+@import 'src/assets/utils.scss';
+
+.export-report {
+    &-title {
+        background: $color1;
+        padding: 10px;
+    }
+    &-content {
+        border: 1px solid $color1;
+        min-height: 500px;
+        .sidebar {
+            padding: 10px;
+            border-right: 1px solid $color1;
+            position: relative;
+            .btn-approve {
+                position: absolute;
+                bottom: 10px;
+                left: 10px
+            }
+        }
+        .main {
+        }
+    }
+}
